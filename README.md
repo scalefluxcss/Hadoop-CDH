@@ -34,6 +34,7 @@ If Cloudera CDH 5.4.0 is installed at /opt/cloudera/parcels/CDH, let’s say $CD
 - After dependencies were all installed, compile packages with maven command:
 
          mvn package -DskipTests
+- Find hadoop-common-2.6.0-cdh5.4.0.jar and hadoop-mapreduce-examples-2.6.0-cdh5.4.0.jar under ./hadoop-common-project/hadoop-common/target
 
 
 ## Replace Jar packages to enable CSSZlib Compression
@@ -41,5 +42,4 @@ If Cloudera CDH 5.4.0 is installed at /opt/cloudera/parcels/CDH, let’s say $CD
 
          hadoop-common-2.6.0-cdh5.4.0.jar
          hadoop-mapreduce-examples-2.6.0-cdh5.4.0.jar
-
 - Replace hadoop-common-2.6.0-cdh5.4.0.jar within $CDH_HOME/lib/hadoop

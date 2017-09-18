@@ -108,6 +108,10 @@ public class CompressorStream extends CompressionOutputStream {
       finally {
         out.close();
         closed = true;
+        if (compressor.getClass().getSimpleName().equalsIgnoreCase("CSSZlibCompressor")) {
+          // resetState();
+          compressor.reset();
+        }
       }
     }
   }

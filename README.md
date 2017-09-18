@@ -33,7 +33,7 @@ If Cloudera CDH 5.4.0 is installed at /opt/cloudera/parcels/CDH, let’s say $CD
 - Refer to BUILDING.txt for more details about library dependencies and build commands.
 - After dependencies were all installed, compile packages with maven command:
 
-                  mvn package -DskipTests
+         mvn package -DskipTests
 
 
 ## Replace Jar packages to enable CSSZlib Compression
